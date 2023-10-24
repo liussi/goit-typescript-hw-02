@@ -10,7 +10,7 @@ enum WeekDay {
   Thursday,
   Friday,
   Saturday,
-  Sunday
+  Sunday,
 }
 
 function isWeekend(day: WeekDay): boolean {

@@ -11,22 +11,23 @@ type User = {
   surname: string;
   email: string;
   password: string;
-}
+};
 
-function createOrUpdateUser(toUpdate: Partial<User> ): User {
+function createOrUpdateUser(toUpdate: Partial<User>): User {
   const defaultUser: User = {
-    surname:'',
-    password: '',
-    email: '',
-    name:''
+    surname: "",
+    password: "",
+    email: "",
+    name: "",
   };
   return { ...defaultUser, ...toUpdate };
 }
 
-
-const updatedUser = createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
+const updatedUser = createOrUpdateUser({
+  email: "user@mail.com",
+  password: "password123",
+});
 
 console.log(updatedUser);
-
 
 export {};
